@@ -158,6 +158,16 @@
     <Content Include="Meuh1.wav" />
     <Content Include="medecin.png" />
     <Content Include="README_FIRST.txt" />
+    <Content Include="t1.png" />
+    <Content Include="t10.png" />
+    <Content Include="t2.png" />
+    <Content Include="t3.png" />
+    <Content Include="t4.png" />
+    <Content Include="t5.png" />
+    <Content Include="t6.png" />
+    <Content Include="t7.png" />
+    <Content Include="t8.png" />
+    <Content Include="t9.png" />
     <Content Include="thermo.png" />
     <Content Include="title.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Add.png" />

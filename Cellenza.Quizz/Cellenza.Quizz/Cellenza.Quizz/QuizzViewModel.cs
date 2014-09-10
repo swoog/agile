@@ -57,5 +57,55 @@ namespace Cellenza.Quizz
                         });
             }
         }
+
+        public bool T1Visibility
+        {
+            get { return App.QuizzPoints < 5; }
+        }
+
+        public bool T2Visibility
+        {
+            get { return App.QuizzPoints <= 10 && App.QuizzPoints > 5; }
+        }
+
+        public bool T3Visibility
+        {
+            get { return App.QuizzPoints <= 15 && App.QuizzPoints > 10; }
+        }
+
+        public bool T4Visibility
+        {
+            get { return App.QuizzPoints <= 20 && App.QuizzPoints > 15; }
+        }
+
+        public bool T5Visibility
+        {
+            get { return App.QuizzPoints <= 24 && App.QuizzPoints > 20; }
+        }
+
+        public bool T6Visibility
+        {
+            get { return App.QuizzPoints <= 27 && App.QuizzPoints > 24; }
+        }
+
+        public bool T7Visibility
+        {
+            get { return App.QuizzPoints <= 30 && App.QuizzPoints > 27; }
+        }
+
+        public bool T8Visibility
+        {
+            get { return App.QuizzPoints <= 34 && App.QuizzPoints > 30; }
+        }
+
+        public bool T9Visibility
+        {
+            get { return App.QuizzPoints <= 37 && App.QuizzPoints > 34; }
+        }
+
+        public bool T10Visibility
+        {
+            get { return App.QuizzPoints > 37; }
+        }
     }
 }

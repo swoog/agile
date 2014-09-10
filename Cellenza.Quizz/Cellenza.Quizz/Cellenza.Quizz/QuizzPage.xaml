@@ -41,7 +41,16 @@
         </DataTemplate>
       </ListView.ItemTemplate>
     </ListView>
-    <Image Grid.Column="2" Grid.Row="1" Grid.RowSpan="2" Source="thermo.png" />
+    <Image Grid.Column="2" Grid.Row="1" Grid.RowSpan="2" Source="t1.png" IsVisible="{Binding T1Visibility}" />
+    <Image Grid.Column="2" Grid.Row="1" Grid.RowSpan="2" Source="t2.png" IsVisible="{Binding T2Visibility}" />
+    <Image Grid.Column="2" Grid.Row="1" Grid.RowSpan="2" Source="t3.png" IsVisible="{Binding T3Visibility}" />
+    <Image Grid.Column="2" Grid.Row="1" Grid.RowSpan="2" Source="t4.png" IsVisible="{Binding T4Visibility}" />
+    <Image Grid.Column="2" Grid.Row="1" Grid.RowSpan="2" Source="t5.png" IsVisible="{Binding T5Visibility}" />
+    <Image Grid.Column="2" Grid.Row="1" Grid.RowSpan="2" Source="t6.png" IsVisible="{Binding T6Visibility}" />
+    <Image Grid.Column="2" Grid.Row="1" Grid.RowSpan="2" Source="t7.png" IsVisible="{Binding T7Visibility}" />
+    <Image Grid.Column="2" Grid.Row="1" Grid.RowSpan="2" Source="t8.png" IsVisible="{Binding T8Visibility}" />
+    <Image Grid.Column="2" Grid.Row="1" Grid.RowSpan="2" Source="t9.png" IsVisible="{Binding T9Visibility}" />
+    <Image Grid.Column="2" Grid.Row="1" Grid.RowSpan="2" Source="t10.png" IsVisible="{Binding T10Visibility}" />
     <Label TextColor="#612084" Text="{Binding Level}" />
   </Grid>
 </ContentPage>
