@@ -12,6 +12,6 @@
       <Button Text="Q" Command="{Binding QuizzCommand}" />
       <Button Text="T" Command="{Binding ToolsCommand}"/>
       <Button Text="A" Command="{Binding AboutCommand}"/>
-    </StackLayout>
+  </StackLayout>
   </Grid>
 </ContentPage>
