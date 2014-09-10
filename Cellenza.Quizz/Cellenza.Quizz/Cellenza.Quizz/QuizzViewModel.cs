@@ -31,7 +31,10 @@ namespace Cellenza.Quizz
             this.Responses = new ObservableCollection<Reponse>(question.Answers);
 
             this.Level = App.QuizzPoints.ToString();
+            this.LevelWidth = App.QuizzPoints * 300.0 / 40.0;
         }
+
+        public double LevelWidth { get; set; }
 
         public ICommand AnswerCommand
         {

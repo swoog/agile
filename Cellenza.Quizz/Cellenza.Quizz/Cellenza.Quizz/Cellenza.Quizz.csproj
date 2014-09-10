@@ -112,12 +112,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="Questions.xsc">
+      <DependentUpon>Questions.xsd</DependentUpon>
+    </None>
+    <None Include="Questions.xss">
+      <DependentUpon>Questions.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Icones\About.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Icones\Quizz.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Icones\tools.png" />
