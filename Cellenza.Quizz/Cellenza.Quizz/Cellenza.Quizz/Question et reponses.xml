@@ -1,0 +1,143 @@
+﻿﻿<?xml version="1.0" encoding="utf-8" ?>
+<Questions>
+  <Question Text="Quelle forme ont mes specs?">
+    <Reponse Points="0"  Value="Définition de besoin, SFD, STD"  />
+    <Reponse Points="1"  Value="En tant que..., je dois..., afin de..."  />
+    <Reponse Points="2"  Value="Les specs ne sont pas sèches... mais on est agile ou merde? On y va" />
+    <Reponse Points="3"  Value="US validés par tous avec cas d'acceptance" />
+  </Question>
+  <Question Text="Comment se décide si une tâche est DONE">
+    <Reponse Points="0"  Value="Le développeur a commité dans le contrôle de source" />
+    <Reponse Points="3"  Value="Ca marche en PROD"/>
+    <Reponse Points="2"  Value="C'est testé en recette" />
+    <Reponse Points="1"  Value="On a rempli toutes les conditions du Definition Of DONE"/>
+  </Question>
+  <Question Text="Les tests: quelle est votre démarche?">
+    <Reponse Points="1"  Value="Test en recette avec cahier de recette" />
+    <Reponse Points="3"  Value="TU/TI pour valider les devs"/>
+    <Reponse Points="3"  Value="TDD" />
+    <Reponse Points="0"  Value="Tester, c'est douter"/>
+  </Question>
+  <Question Text="Qui teste le produit">
+    <Reponse Points="2"  Value="L'équipe d'intégration" />
+    <Reponse Points="0"  Value="Normalement, c'est bon, En tout cas, sur mon poste, ça marche"/>
+    <Reponse Points="3"  Value="Tests croisés, puis Product Owner" />
+    <Reponse Points="0"  Value="Des utilisateurs finaux, ou mieux, un singe"/>
+  </Question>
+  <Question Text="Qui décide du changement de périmètre">
+    <Reponse Points="1"  Value="La Direction" />
+    <Reponse Points="3"  Value="Le Product Owner"/>
+    <Reponse Points="0"  Value="Ce n'était pas dans les specs, On va faire un avenant" />
+    <Reponse Points="2"  Value="Consensus"/>
+  </Question>
+  <Question Text="Quand fini le projet?">
+    <Reponse Points="1"  Value="C'est en prod, Bon la date est dépassée de 6 mois, c'est buggé. Mais bon." />
+    <Reponse Points="2"  Value="Jamais car il y a toujours de nouvelles idées"/>
+    <Reponse Points="3"  Value="La date et la vélocité sont immuables. Donc la seule variable d'ajustement est le scope. Donc quand le client a ce qu'il faut." />
+    <Reponse Points="0"  Value="Quand j'ai démissioné"/>
+  </Question>
+  <Question Text="A quel moment voit-on le client final">
+    <Reponse Points="1"  Value="Pas besoin, on a la MOA" />
+    <Reponse Points="0"  Value="Oh bah s'il a envie de passer, il peut, hein..."/>
+    <Reponse Points="2"  Value="On a un représentant à notre disposition en permanence." />
+    <Reponse Points="3"  Value="Participe à toutes les phases du projet"/>
+  </Question>
+  <Question Text="Amélioration continue ?">
+    <Reponse Points="2"  Value="Il suffit que l'équipe soit moins feignante?" />
+    <Reponse Points="0"  Value="Nous n'avons pas de temps à perde dans des réunions inutiles"/>
+    <Reponse Points="3"  Value="Rétro régulière (et parfois, il en sort quelque chose d'intéressant)" />
+    <Reponse Points="0"  Value="Dès qu'il y a un problème, il faut le résoudre pour fluidifier la chaîne"/>
+  </Question>
+  <Question Text="Qui ecrit les specs?">
+    <Reponse Points="0"  Value="La MOA" />
+    <Reponse Points="3"  Value="Le PO avec relecture"/>
+    <Reponse Points="2"  Value="Toute l'équipe participe à la conception (spec wall,...)" />
+    <Reponse Points="1"  Value="Toute l'équipe concoit l'US et ses cas d'acceptance"/>
+  </Question>
+  <Question Text="A quel moment sont rédigés mes tests">
+    <Reponse Points="0"  Value="En recette après la reception du DEV" />
+    <Reponse Points="3"  Value="TDD pendant le DEV"/>
+    <Reponse Points="3"  Value="Avant et après. Les tests sont en constante évolution avec le produit" />
+    <Reponse Points="3"  Value="Pendant la rédaction des US. Démarche ATDD"/>
+  </Question>
+  <Question Text="Avez-vous un suivi des actions mises en place">
+    <Reponse Points="2"  Value="On a une trace de tous nos problème dans le wiki" />
+    <Reponse Points="0"  Value="Quellqes actions"/>
+    <Reponse Points="0"  Value="On fait un post-mortem en fin de project. Et on flagelle les coupables" />
+    <Reponse Points="3"  Value="Affichage et suivi des actions mises en place en continu"/>
+  </Question>
+  <Question Text="Comment est géré le budget?">
+    <Reponse Points="0"  Value="Je sais pas, faudrait regarder sur le contrat" />
+    <Reponse Points="0"  Value="Bon, on a bradé le forfait, mais on va se gaver sur les avenants" />
+    <Reponse Points="2"  Value="Le PO gère le porte monnaie" />
+    <Reponse Points="3"  Value="On a des indicateurs partagés sur le budget" />
+  </Question>
+  <Question Text="Multi équipe : comment faites vous ?">
+    <Reponse Points="1"  Value="On a un chef de projet pour coordonner les dates d'accostage" />
+    <Reponse Points="0"  Value="COPIL hebdo" />
+    <Reponse Points="2"  Value="Boards synchronisés, visibles et connus de tous" />
+    <Reponse Points="3"  Value="Scrum of Scrum" />
+  </Question>
+  <Question Text="Qui travaille sur quoi dans l'équipe">
+    <Reponse Points="0"  Value="Vendu au client : Equipe d'experts spécialisés. En vrai : stagiaires." />
+    <Reponse Points="1"  Value="Au moins 2 personnes connaissent les parties critiques de l'application " />
+    <Reponse Points="2"  Value="Nous cherchons à ce que tout le mon monde soit capable de travailler sur n’importe quelle partie" />
+    <Reponse Points="3"  Value="Nous avons défini​ un market of skill​ afin de suivre​ efficacement​ les compétences​ de chacun" />
+  </Question>
+  <Question Text="Partage de connaissance ?">
+    <Reponse Points="0"  Value="Chacun sa gueule, chacun son code" />
+    <Reponse Points="1"  Value="Revue de code" />
+    <Reponse Points="2"  Value="Pair programming" />
+    <Reponse Points="3"  Value="Pair, dojo, ... Nous sommes des artisans !" />
+  </Question>
+  <Question Text="Who’s the boss ?​">
+    <Reponse Points="1"  Value="​Chef de projet​ (ou son chef)​ (ou le chef de son chef)​" />
+    <Reponse Points="3"  Value="Scrum Master​" />
+    <Reponse Points="0"  Value="​Celui qui a les sous / mon commercial​" />
+    <Reponse Points="2"  Value="Pas de chef​ et pourtant​ ça marche !" />
+  </Question>
+  <Question Text="Comment mesurer l’état d’avancement ?">
+    <Reponse Points="0"  Value="Sur Project, c’est marqué qu’on est à 43,08%" />
+    <Reponse Points="3"  Value="Il nous reste ​15 points ​sur ce sprint" />
+    <Reponse Points="3"  Value="Burndown chart​ du Product Backlog" />
+    <Reponse Points="3"  Value="Nombre de Feature​ en Prod" />
+  </Question>
+  <Question Text="Quels sont mes KPI ?​">
+    <Reponse Points="0"  Value="Surveillance de la productivité/JH,​ et du pourcentage réalisé, du TJM" />
+    <Reponse Points="2"  Value="Contrôle de la​ velocité​ de l’équipe" />
+    <Reponse Points="3"  Value="Indicateurs de maturité agile :​ quantité d’US dans le Product Backlog​, nombre d’anomalies par US​, vélocité" />
+    <Reponse Points="1"  Value="Pilotage global​ : projet​, Business Value​, qualité​, business" />
+  </Question>
+  <Question Text="Qui s’occupe du déploiement en recette ?​">
+    <Reponse Points="0"  Value="Je sais pas, moi je livre un doc de déploiement sur le réseau" />
+    <Reponse Points="2"  Value="N’importe qui​ dans l’équipe" />
+    <Reponse Points="3"  Value="Une machine" />
+    <Reponse Points="0"  Value="Un Mexicain" />
+  </Question>
+  <Question Text="Qui attribue les tâches ?">
+    <Reponse Points="2"  Value="​Le chef d’équipe​" />
+    <Reponse Points="1"  Value="Le PO​" />
+    <Reponse Points="0"  Value="​Je prends ce qui me plait" />
+    <Reponse Points="3"  Value="Je prends la ​plus prioritaire​ en fonction​ des conditions" />
+  </Question>
+  <Question Text="Qui fait l'estimation des tâches ?">
+    <Reponse Points="0"  Value="Celui qui crie le plus fort pendant le Planning Poker" />
+    <Reponse Points="2"  Value="L'équipe propose et le chef valide" />
+    <Reponse Points="1"  Value="C'est celui qui développe qui décide. Ou le CP, ça dépend" />
+    <Reponse Points="3"  Value="Consensus de l'équipe" />
+  </Question>
+  <Question Text="Qui décide de l’architecture logicielle ?​">
+    <Reponse Points="4"  Value="L’architecte" />
+    <Reponse Points="4"  Value="L’équipe" />
+    <Reponse Points="4"  Value="Consensus Archi, chef et DEV" />
+    <Reponse Points="4"  Value="Démarche ​innovante ​de co-création​ FDD / DDD" />
+  </Question>
+  <Question Text="Comment gère-t-on les deadlines ?​">
+    <Reponse Points="1"  Value="“Tu fais quoi samedi ?”" />
+    <Reponse Points="3"  Value="On déscope​ des sujets​ en fonction​ de notre vélocité" />
+    <Reponse Points="0"  Value="​Arrêtez de faire des tests, on n’a plus de temps à gaspiller !" />
+    <Reponse Points="2"  Value="Deadline ?​ On est​ en flux continu,​ mec !" />
+  </Question>
+</Questions>
+
+
