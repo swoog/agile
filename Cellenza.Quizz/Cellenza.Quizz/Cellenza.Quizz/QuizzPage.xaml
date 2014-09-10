@@ -41,7 +41,7 @@
         </DataTemplate>
       </ListView.ItemTemplate>
     </ListView>
-    <Image Grid.Column="2" Grid.Row="1" Source="thermo.png" />
+    <Image Grid.Column="2" Grid.Row="1" Grid.RowSpan="2" Source="thermo.png" />
     <Label TextColor="#612084" Text="{Binding Level}" />
   </Grid>
 </ContentPage>
