@@ -108,9 +108,7 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="QuestionRead\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
