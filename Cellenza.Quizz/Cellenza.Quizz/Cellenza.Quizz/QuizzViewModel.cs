@@ -24,13 +24,8 @@ namespace Cellenza.Quizz
 
         public QuizzViewModel()
         {
-            var questions = new QuestionsRepository().GetAll();
 
-
-            var rand = new Random();
-            var randNumber = rand.Next(questions.Count);
-
-            var question = questions[randNumber];
+            var question = App.CurrentQuestion;
 
             this.QuestionText = question.Text;
             this.Responses = new ObservableCollection<Reponse>(question.Answers);
@@ -45,8 +40,8 @@ namespace Cellenza.Quizz
                 return new Command<Reponse>(
                     r =>
                         {
-                            App.QuizzPoints += r.Points;
-                            App.QuestionAnswered++;
+                            App.AnswerQuizz(r.Points);
+                        
 
                             if (App.QuestionAnswered < 10)
                             {
