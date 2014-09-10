@@ -50,7 +50,6 @@
     <Compile Include="Models\Questions.cs" />
     <Compile Include="Models\Reponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QuestionRead\Question.cs" />
     <Compile Include="QuizzPage.xaml.cs">
       <DependentUpon>QuizzPage.xaml</DependentUpon>
     </Compile>
@@ -108,6 +107,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="QuestionRead\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
