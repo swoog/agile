@@ -9,17 +9,26 @@ namespace Cellenza.Quizz
 {
     public class App
     {
-        public static Page GetMainPage()
+        public static Page GetPage<TPage, TViewModel>()
+            where TPage : Page, new()
+            where TViewModel : BaseViewModel, new()
         {
-            return new ContentPage
-            {
-                Content = new Label
-                {
-                    Text = "Hello, Forms !",
-                    VerticalOptions = LayoutOptions.CenterAndExpand,
-                    HorizontalOptions = LayoutOptions.CenterAndExpand,
-                },
-            };
+            var view = new TPage();
+            var vm = new TViewModel();
+            view.BindingContext = vm;
+            vm.Navigation = view.Navigation;
+
+            return view;
         }
+
+        public static Page GetStartPage()
+        {
+            return GetPage<MainPage, MainViewModel>();
+        }
+    }
+
+    public class BaseViewModel
+    {
+        public INavigation Navigation { get; internal set; }
     }
 }

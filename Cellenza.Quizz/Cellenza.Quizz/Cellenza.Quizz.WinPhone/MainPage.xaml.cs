@@ -20,7 +20,7 @@ namespace Cellenza.Quizz.WinPhone
             InitializeComponent();
 
             Forms.Init();
-            Content = Cellenza.Quizz.App.GetMainPage().ConvertPageToUIElement(this);
+            Content = Cellenza.Quizz.App.GetStartPage().ConvertPageToUIElement(this);
         }
     }
 }

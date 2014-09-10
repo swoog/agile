@@ -20,7 +20,7 @@ namespace Cellenza.Quizz.Droid
 
             Xamarin.Forms.Forms.Init(this, bundle);
 
-            SetPage(App.GetMainPage());
+            SetPage(App.GetStartPage());
         }
     }
 }
