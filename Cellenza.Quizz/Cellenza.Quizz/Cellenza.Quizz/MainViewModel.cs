@@ -22,7 +22,7 @@
             {
                 return new Command(() =>
                 {
-                    this.Navigation.PushAsync(App.GetPage<AboutPage, AboutViewModel>());
+                    this.Navigation.PushAsync(App.GetPage<QuizzPage, QuizzViewModel>());
                 });
             }
         }
@@ -33,7 +33,7 @@
             {
                 return new Command(() =>
                 {
-                    this.Navigation.PushAsync(App.GetPage<AboutPage, AboutViewModel>());
+                    this.Navigation.PushAsync(App.GetPage<ToolsPage, ToolsViewModel>());
                 });
             }
         }
