@@ -131,6 +131,13 @@
     <Content Include="Assets\ApplicationIcon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Icones\About.png" />
+    <DesignDataWithDesignTimeCreatableTypes Include="Icones\artiste.png" />
+    <BundleResource Include="Icones\grd-maitre.png" />
+    <BundleResource Include="Icones\irma.png" />
+    <BundleResource Include="Icones\looser.png" />
+    <BundleResource Include="Icones\tools.png" />
+    <Content Include="Icones\vache.png" />
     <Content Include="Meuh1.mp3" />
     <Content Include="Assets\Tiles\FlipCycleTileLarge.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
