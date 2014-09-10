@@ -8,29 +8,22 @@ using Xamarin.Forms;
 
 namespace Cellenza.Quizz
 {
-    public class ToolsViewModel : BaseViewModel
+    public class MeuhViewModel : BaseViewModel
     {
-        public ToolsViewModel()
-        {
-            MeuhViewModel = new MeuhViewModel();
-        }
-
-        public MeuhViewModel MeuhViewModel
-        {
-            get;
-            private set;
-        }
-
         public ICommand MeuhCommand
         {
             get
             {
                 return new Command(() =>
                 {
-                    MeuhViewModel.Meuh();
+                    Meuh();
                 });
             }
         }
 
+        public void Meuh()
+        {
+            App.MeuhSoundService.Play();
+        }
     }
 }

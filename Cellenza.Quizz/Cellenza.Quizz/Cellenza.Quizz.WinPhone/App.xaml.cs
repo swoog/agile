@@ -7,6 +7,7 @@ using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using Cellenza.Quizz.WinPhone.Resources;
+using Cellenza.Quizz.WinPhone.SpecificServices;
 
 namespace Cellenza.Quizz.WinPhone
 {
@@ -61,6 +62,7 @@ namespace Cellenza.Quizz.WinPhone
         // This code will not execute when the application is reactivated
         private void Application_Launching(object sender, LaunchingEventArgs e)
         {
+            Cellenza.Quizz.App.MeuhSoundService = new MeuhSoundService();
         }
 
         // Code to execute when the application is activated (brought to foreground)

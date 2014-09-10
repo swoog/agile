@@ -1,8 +1,8 @@
-﻿using System;
+﻿using Cellenza.Quizz.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
 using Xamarin.Forms;
 
 namespace Cellenza.Quizz
@@ -29,5 +29,7 @@ namespace Cellenza.Quizz
         public static int QuizzPoints { get; set; }
 
         public static int QuestionAnswered { get; set; }
+
+        public static IMeuhSoundService MeuhSoundService { get; set; }
     }
 }

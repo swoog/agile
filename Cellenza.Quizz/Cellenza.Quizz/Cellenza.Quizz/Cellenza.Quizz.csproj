@@ -46,6 +46,10 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainViewModel.cs" />
+    <Compile Include="MeuhPage.xaml.cs">
+      <DependentUpon>MeuhPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MeuhViewModel.cs" />
     <Compile Include="Models\Question.cs" />
     <Compile Include="Models\Questions.cs" />
     <Compile Include="Models\Reponse.cs" />
@@ -59,6 +63,7 @@
       <DependentUpon>Resultat.xaml</DependentUpon>
     </Compile>
     <Compile Include="ResultatViewModel.cs" />
+    <Compile Include="Services\IMeuhSoundService.cs" />
     <Compile Include="ToolsPage.xaml.cs">
       <DependentUpon>ToolsPage.xaml</DependentUpon>
     </Compile>
@@ -108,6 +113,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MeuhPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Meuh1.mp3" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
