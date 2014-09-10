@@ -2,9 +2,16 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
 					   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 					   x:Class="Cellenza.Quizz.MainPage">
-  <StackLayout >
-    <Button Text="Quizz" Command="{Binding QuizzCommand}"/>
-    <Button Text="Tools" Command="{Binding ToolsCommand}"/>
-    <Button Text="About" Command="{Binding AboutCommand}"/>
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*" />
+      <RowDefinition Height="200" />
+    </Grid.RowDefinitions>
+    <Image Grid.Row="0" />
+    <StackLayout Orientation="Horizontal" Grid.Row="1">
+      <Button Text="Q" Command="{Binding QuizzCommand}" />
+      <Button Text="T" Command="{Binding ToolsCommand}"/>
+      <Button Text="A" Command="{Binding AboutCommand}"/>
   </StackLayout>
+  </Grid>
 </ContentPage>
