@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Cellenza.Quizz.Repositories;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,6 +12,7 @@ namespace Cellenza.Quizz
         public MainPage()
         {
             InitializeComponent();
+            var questions = new QuestionsRepository().GetAll();
         }
     }
 }

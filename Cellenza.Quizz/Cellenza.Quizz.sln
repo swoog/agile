@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cellenza.Quizz", "Cellenza.Quizz\Cellenza.Quizz\Cellenza.Quizz.csproj", "{0B6A52A6-87A6-405F-9FD9-60AD41C14617}"
 EndProject
@@ -10,6 +10,13 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cellenza.Quizz.Android", "Cellenza.Quizz\Cellenza.Quizz.Android\Cellenza.Quizz.Android.csproj", "{A036194C-AC6B-491A-AD66-74EF4F2F718D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cellenza.Quizz.WinPhone", "Cellenza.Quizz\Cellenza.Quizz.WinPhone\Cellenza.Quizz.WinPhone.csproj", "{47400A32-2832-40E2-971C-F60D3738E331}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{AB9EC715-FB01-45BB-B811-56DCA2D7E805}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
