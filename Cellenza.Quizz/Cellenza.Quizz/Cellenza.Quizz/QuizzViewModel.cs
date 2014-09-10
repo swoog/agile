@@ -17,6 +17,8 @@ namespace Cellenza.Quizz
     {
         public string QuestionText { get; set; }
 
+        public string Level { get; set; }
+
         public ObservableCollection<Response> Responses { get; set; }
 
         public QuizzViewModel()
@@ -30,6 +32,7 @@ namespace Cellenza.Quizz
                                      new Response() { Value = "Val4", Points = 3, },
                                  };
 
+            this.Level = App.QuizzPoints.ToString();
         }
 
         public ICommand AnswerCommand
@@ -42,7 +45,7 @@ namespace Cellenza.Quizz
                             App.QuizzPoints += r.Points;
                             App.QuestionAnswered++;
 
-                            if (App.QuestionAnswered >= 10)
+                            if (App.QuestionAnswered < 10)
                             {
                                 this.Navigation.PushAsync(App.GetPage<QuizzPage, QuizzViewModel>());
                             }
