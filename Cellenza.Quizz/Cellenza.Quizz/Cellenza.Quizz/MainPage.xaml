@@ -9,15 +9,15 @@
       <ColumnDefinition Width="20" />
     </Grid.ColumnDefinitions>
     <Grid.RowDefinitions>
-      <RowDefinition Height="200" />
+      <RowDefinition Height="100" />
       <RowDefinition Height="*" />
       <RowDefinition Height="200" />
     </Grid.RowDefinitions>
     <StackLayout BackgroundColor="#612084" Grid.Row="0"  Grid.ColumnSpan="3">
-      <Image Source="title.png" /><Label Text="Docteur agile" />
+      <Image Source="title.png" />
     </StackLayout>   
     <Image Grid.Column="1" Grid.Row="1" Source="medecin.png" />
-    <StackLayout Orientation="Horizontal" Grid.Row="2" Grid.ColumnSpan="3" Spacing="25">
+    <StackLayout Orientation="Horizontal" Grid.Row="2" Grid.Column="1">
       <Image Source="Quizz.png">
         <Image.GestureRecognizers>
           <TapGestureRecognizer
