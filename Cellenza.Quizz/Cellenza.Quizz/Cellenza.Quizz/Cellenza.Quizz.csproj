@@ -112,12 +112,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Icones\About.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Icones\tools.png" />
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Icones\grd-maitre.png" />
   </ItemGroup>
   <ItemGroup>
