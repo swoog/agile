@@ -4,21 +4,38 @@
 					   x:Class="Cellenza.Quizz.MainPage">
   <Grid BackgroundColor="#FFFFFF">
     <Grid.ColumnDefinitions>
-      <ColumnDefinition Width="20" />
+      <ColumnDefinition Width="50" />
       <ColumnDefinition Width="*" />
       <ColumnDefinition Width="20" />
     </Grid.ColumnDefinitions>
     <Grid.RowDefinitions>
-      <RowDefinition Height="Auto" />
+      <RowDefinition Height="200" />
       <RowDefinition Height="*" />
       <RowDefinition Height="200" />
     </Grid.RowDefinitions>
-    <Label Grid.Column="1" Font="60" Text="Docteur Agile" Grid.Row="0" TextColor="#612084" />
+    <StackLayout BackgroundColor="#612084" Grid.Row="0"  Grid.ColumnSpan="3">
+      <Image Source="title.png" /><Label Text="Docteur agile" />
+    </StackLayout>   
     <Image Grid.Column="1" Grid.Row="1" Source="medecin.png" />
     <StackLayout Orientation="Horizontal" Grid.Row="2" Grid.ColumnSpan="3" Spacing="25">
-      <Button Text="Q" Command="{Binding QuizzCommand}" TextColor="#612084" />
-      <Button Text="T" Command="{Binding ToolsCommand}" TextColor="#612084" />
-      <Button Text="A" Command="{Binding AboutCommand}" TextColor="#612084" />
+      <Image Source="Quizz.png">
+        <Image.GestureRecognizers>
+          <TapGestureRecognizer
+              Command="{Binding QuizzCommand}" />
+        </Image.GestureRecognizers>
+      </Image>
+      <Image Source="tools.png">
+        <Image.GestureRecognizers>
+          <TapGestureRecognizer
+              Command="{Binding ToolsCommand}" />
+        </Image.GestureRecognizers>
+      </Image>
+      <Image Source="About.png">
+        <Image.GestureRecognizers>
+          <TapGestureRecognizer
+              Command="{Binding AboutCommand}" />
+        </Image.GestureRecognizers>
+      </Image>
     </StackLayout>
   </Grid>
 </ContentPage>
