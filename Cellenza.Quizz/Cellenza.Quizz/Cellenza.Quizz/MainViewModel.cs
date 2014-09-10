@@ -21,10 +21,10 @@
             get
             {
                 return new Command(() =>
-                    {
-                        App.QuestionAnswered = 0;
-                        this.Navigation.PushAsync(App.GetPage<QuizzPage, QuizzViewModel>());
-                    });
+                {
+                    App.RestartQuizz();
+                    this.Navigation.PushAsync(App.GetPage<QuizzPage, QuizzViewModel>());
+                });
             }
         }
 

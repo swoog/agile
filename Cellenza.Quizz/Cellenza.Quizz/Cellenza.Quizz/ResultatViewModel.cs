@@ -8,5 +8,11 @@ namespace Cellenza.Quizz
 {
     public class ResultatViewModel : BaseViewModel
     {
+        public ResultatViewModel()
+        {
+            this.Level = App.QuizzPoints.ToString();
+        }
+
+        public string Level { get; set; }
     }
 }

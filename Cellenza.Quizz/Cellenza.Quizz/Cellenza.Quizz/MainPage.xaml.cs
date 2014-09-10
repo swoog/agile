@@ -12,7 +12,6 @@ namespace Cellenza.Quizz
         public MainPage()
         {
             InitializeComponent();
-            var questions = new QuestionsRepository().GetAll();
         }
     }
 }

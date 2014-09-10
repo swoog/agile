@@ -2,16 +2,23 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
 					   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 					   x:Class="Cellenza.Quizz.MainPage">
-  <Grid>
+  <Grid BackgroundColor="#FFFFFF">
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="20" />
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="20" />
+    </Grid.ColumnDefinitions>
     <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" />
       <RowDefinition Height="*" />
       <RowDefinition Height="200" />
     </Grid.RowDefinitions>
-    <Image Grid.Row="0" />
-    <StackLayout Orientation="Horizontal" Grid.Row="1">
-      <Button Text="Q" Command="{Binding QuizzCommand}" />
-      <Button Text="T" Command="{Binding ToolsCommand}"/>
-      <Button Text="A" Command="{Binding AboutCommand}"/>
-  </StackLayout>
+    <Label Grid.Column="1" Font="60" Text="Docteur Agile" Grid.Row="0" TextColor="#612084" />
+    <Image Grid.Column="1" Grid.Row="1" Source="medecin.png" />
+    <StackLayout Orientation="Horizontal" Grid.Row="2" Grid.ColumnSpan="3" Spacing="25">
+      <Button Text="Q" Command="{Binding QuizzCommand}" TextColor="#612084" />
+      <Button Text="T" Command="{Binding ToolsCommand}" TextColor="#612084" />
+      <Button Text="A" Command="{Binding AboutCommand}" TextColor="#612084" />
+    </StackLayout>
   </Grid>
 </ContentPage>

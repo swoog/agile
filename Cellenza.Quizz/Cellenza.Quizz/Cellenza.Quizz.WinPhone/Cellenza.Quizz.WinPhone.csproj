@@ -148,6 +148,7 @@
     </Content>
     <Content Include="Meuh1.wav" />
     <Content Include="README_FIRST.txt" />
+    <Content Include="medecin.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Add.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Cancel.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Check.png" />

@@ -9,7 +9,8 @@ namespace Cellenza.Quizz
     using System.Collections.ObjectModel;
     using System.Windows.Input;
 
-    using Cellenza.Quizz.QuestionRead;
+    using Cellenza.Quizz.Models;
+    using Cellenza.Quizz.Repositories;
 
     using Xamarin.Forms;
 
@@ -19,18 +20,15 @@ namespace Cellenza.Quizz
 
         public string Level { get; set; }
 
-        public ObservableCollection<Response> Responses { get; set; }
+        public ObservableCollection<Reponse> Responses { get; set; }
 
         public QuizzViewModel()
         {
-            this.QuestionText = "Ma question ?";
-            this.Responses = new ObservableCollection<Response>()
-                                 {
-                                     new Response() { Value = "Val1", Points = 0, },
-                                     new Response() { Value = "Val2", Points = 1, },
-                                     new Response() { Value = "Val3", Points = 2, },
-                                     new Response() { Value = "Val4", Points = 3, },
-                                 };
+
+            var question = App.CurrentQuestion;
+
+            this.QuestionText = question.Text;
+            this.Responses = new ObservableCollection<Reponse>(question.Answers);
 
             this.Level = App.QuizzPoints.ToString();
         }
@@ -39,11 +37,11 @@ namespace Cellenza.Quizz
         {
             get
             {
-                return new Command<Response>(
+                return new Command<Reponse>(
                     r =>
                         {
-                            App.QuizzPoints += r.Points;
-                            App.QuestionAnswered++;
+                            App.AnswerQuizz(r.Points);
+                        
 
                             if (App.QuestionAnswered < 10)
                             {
@@ -56,12 +54,5 @@ namespace Cellenza.Quizz
                         });
             }
         }
-    }
-
-    public class Response
-    {
-        public string Value { get; set; }
-
-        public int Points { get; set; }
     }
 }

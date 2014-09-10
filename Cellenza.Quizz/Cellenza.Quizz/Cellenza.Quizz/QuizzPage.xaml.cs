@@ -8,6 +8,8 @@ namespace Cellenza.Quizz
 {
     using System.ServiceModel.Channels;
 
+    using Cellenza.Quizz.Models;
+
     using Xamarin.Forms;
 
     public partial class QuizzPage
@@ -19,7 +21,7 @@ namespace Cellenza.Quizz
 
         private void AnswerSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            var param = e.SelectedItem as Response;
+            var param = e.SelectedItem as Reponse;
             var command = ((QuizzViewModel)BindingContext).AnswerCommand;
 
             if (command.CanExecute(param))
