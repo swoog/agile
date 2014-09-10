@@ -3,13 +3,8 @@
 					   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 					   x:Class="Cellenza.Quizz.MainPage">
   <StackLayout>
-    <Label Text="Quizz" VerticalOptions="Center" HorizontalOptions="Center" />
-    <Label Text="Mail" VerticalOptions="Center" HorizontalOptions="Center" />
-    <Entry />
-    <Label Text="Pseudo" VerticalOptions="Center" HorizontalOptions="Center" />
-    <Entry />
-    <Button Text="Jouer" Command="{Binding PlayCommand}"/>
-    <Button Text="Stats" Command="{Binding StatsCommand}"/>
+    <Button Text="Quizz" Command="{Binding QuizzCommand}"/>
+    <Button Text="Tools" Command="{Binding ToolsCommand}"/>
     <Button Text="About" Command="{Binding AboutCommand}"/>
   </StackLayout>
 </ContentPage>

@@ -26,9 +26,4 @@ namespace Cellenza.Quizz
             return GetPage<MainPage, MainViewModel>();
         }
     }
-
-    public class BaseViewModel
-    {
-        public INavigation Navigation { get; internal set; }
-    }
 }
