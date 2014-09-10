@@ -25,5 +25,9 @@ namespace Cellenza.Quizz
         {
             return GetPage<MainPage, MainViewModel>();
         }
+
+        public static int QuizzPoints { get; set; }
+
+        public static int QuestionAnswered { get; set; }
     }
 }

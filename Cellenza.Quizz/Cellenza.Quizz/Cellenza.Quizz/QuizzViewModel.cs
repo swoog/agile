@@ -7,8 +7,11 @@ using System.Threading.Tasks;
 namespace Cellenza.Quizz
 {
     using System.Collections.ObjectModel;
+    using System.Windows.Input;
 
     using Cellenza.Quizz.QuestionRead;
+
+    using Xamarin.Forms;
 
     public class QuizzViewModel : BaseViewModel
     {
@@ -27,6 +30,28 @@ namespace Cellenza.Quizz
                                      new Response() { Value = "Val4", Points = 3, },
                                  };
 
+        }
+
+        public ICommand AnswerCommand
+        {
+            get
+            {
+                return new Command<Response>(
+                    r =>
+                        {
+                            App.QuizzPoints += r.Points;
+                            App.QuestionAnswered++;
+
+                            if (App.QuestionAnswered >= 10)
+                            {
+                                this.Navigation.PushAsync(App.GetPage<QuizzPage, QuizzViewModel>());
+                            }
+                            else
+                            {
+                                this.Navigation.PushAsync(App.GetPage<Resultat, ResultatViewModel>());
+                            }
+                        });
+            }
         }
     }
 

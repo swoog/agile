@@ -4,7 +4,7 @@
 					   x:Class="Cellenza.Quizz.QuizzPage">
   <StackLayout Orientation="Horizontal" Grid.Row="1">
     <Label Text="{Binding QuestionText}" VerticalOptions="Center" HorizontalOptions="Center" />
-    <ListView ItemsSource="{Binding Responses}">
+    <ListView ItemsSource="{Binding Responses}" ItemSelected="AnswerSelected">>
       <ListView.ItemTemplate>
         <DataTemplate>
           <ViewCell>

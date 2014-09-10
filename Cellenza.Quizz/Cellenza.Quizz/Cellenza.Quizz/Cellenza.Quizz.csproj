@@ -52,6 +52,10 @@
       <DependentUpon>QuizzPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="QuizzViewModel.cs" />
+    <Compile Include="Resultat.xaml.cs">
+      <DependentUpon>Resultat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ResultatViewModel.cs" />
     <Compile Include="ToolsPage.xaml.cs">
       <DependentUpon>ToolsPage.xaml</DependentUpon>
     </Compile>
@@ -91,6 +95,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="QuizzPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resultat.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
