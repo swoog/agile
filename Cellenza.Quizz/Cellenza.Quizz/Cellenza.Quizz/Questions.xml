@@ -1,13 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Questions>
   <Question Text="Ma question ?">
-    <Reponse Value="Val1" Point="1" />
-    <Reponse Value="Val2" Point="2"/>
-    <Reponse Value="Val3" Point="0"/>
+    <Reponse Value="Val1" Profile1Point="1" Profile2Point="0" Profile3Point="0" Profile4Point="0" />
+    <Reponse Value="Val2" Profile1Point="1" Profile2Point="0" Profile3Point="0" Profile4Point="0" />
+    <Reponse Value="Val3" Profile1Point="1" Profile2Point="0" Profile3Point="0" Profile4Point="0" />
+    <Reponse Value="Val4" Profile1Point="1" Profile2Point="0" Profile3Point="0" Profile4Point="0" />
   </Question>
   <Question Text="Ma question 2 ?">
-    <Reponse Value="Val1" Point="1" />
-    <Reponse Value="Val2" Point="2"/>
-    <Reponse Value="Val3" Point="0"/>
-	</Question>
+    <Reponse Value="Val1" Profile1Point="1" Profile2Point="0" Profile3Point="0" Profile4Point="0" />
+    <Reponse Value="Val2" Profile1Point="1" Profile2Point="0" Profile3Point="0" Profile4Point="0" />
+    <Reponse Value="Val3" Profile1Point="1" Profile2Point="0" Profile3Point="0" Profile4Point="0" />
+    <Reponse Value="Val4" Profile1Point="1" Profile2Point="0" Profile3Point="0" Profile4Point="0" />
+  </Question>
 </Questions>
