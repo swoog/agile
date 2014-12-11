@@ -87,7 +87,23 @@
     <AndroidResource Include="Resources\Drawable\Icon.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\About.png" />
+    <Content Include="Resources\medecin.png" />
     <Content Include="Properties\AndroidManifest.xml" />
+    <Content Include="Resources\Quizz.png" />
+    <Content Include="Resources\t1.png" />
+    <Content Include="Resources\t10.png" />
+    <Content Include="Resources\t2.png" />
+    <Content Include="Resources\t3.png" />
+    <Content Include="Resources\t4.png" />
+    <Content Include="Resources\t5.png" />
+    <Content Include="Resources\t6.png" />
+    <Content Include="Resources\t7.png" />
+    <Content Include="Resources\t8.png" />
+    <Content Include="Resources\t9.png" />
+    <Content Include="Resources\thermo.png" />
+    <Content Include="Resources\title.png" />
+    <Content Include="Resources\Tools.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Cellenza.Quizz\Cellenza.Quizz.csproj">
