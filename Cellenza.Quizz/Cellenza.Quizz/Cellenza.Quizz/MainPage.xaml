@@ -11,31 +11,60 @@
     <Grid.RowDefinitions>
       <RowDefinition Height="100" />
       <RowDefinition Height="*" />
-      <RowDefinition Height="200" />
+      <RowDefinition Height="150" />
+      <RowDefinition Height="50" />
     </Grid.RowDefinitions>
     <StackLayout BackgroundColor="#612084" Grid.Row="0"  Grid.ColumnSpan="3">
       <Image Source="title.png" />
-    </StackLayout>   
+    </StackLayout>
     <Image Grid.Column="1" Grid.Row="1" Source="medecin.png" />
-    <StackLayout Orientation="Horizontal" Grid.Row="2" Grid.Column="1">
-      <Image Source="Quizz.png">
-        <Image.GestureRecognizers>
-          <TapGestureRecognizer
-              Command="{Binding QuizzCommand}" />
-        </Image.GestureRecognizers>
-      </Image>
-      <Image Source="tools.png">
-        <Image.GestureRecognizers>
-          <TapGestureRecognizer
-              Command="{Binding ToolsCommand}" />
-        </Image.GestureRecognizers>
-      </Image>
-      <Image Source="About.png">
+    <Grid Grid.Row="2" Grid.Column="1">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+      </Grid.ColumnDefinitions>
+      <Grid VerticalOptions="Start" Grid.Column="0">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="*" />
+          <RowDefinition Height="20" />
+        </Grid.RowDefinitions>
+        <Image Source="Quizz.png">
+          <Image.GestureRecognizers>
+            <TapGestureRecognizer
+                Command="{Binding QuizzCommand}" />
+          </Image.GestureRecognizers>          
+        </Image>
+        <Label Text="Quizz" TextColor="#2dbbd4" Grid.Row="1" VerticalOptions="Center" HorizontalOptions="Center" />
+      </Grid>
+      <Grid VerticalOptions="Start" Grid.Column="1">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="*" />
+          <RowDefinition Height="20" />
+        </Grid.RowDefinitions>
+        <Image Source="tools.png">
+          <Image.GestureRecognizers>
+            <TapGestureRecognizer
+                Command="{Binding ToolsCommand}" />
+          </Image.GestureRecognizers>
+        </Image>
+        <Label Text="Outils" TextColor="#2dbbd4" Grid.Row="1" VerticalOptions="Center" HorizontalOptions="Center" />
+      </Grid>
+      <Grid VerticalOptions="Start" Grid.Column="2">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="*" />
+          <RowDefinition Height="20" />
+        </Grid.RowDefinitions>
+        <Image Source="About.png">
         <Image.GestureRecognizers>
           <TapGestureRecognizer
               Command="{Binding AboutCommand}" />
         </Image.GestureRecognizers>
       </Image>
+        <Label Text="A propos" TextColor="#2dbbd4" Grid.Row="1" VerticalOptions="Center" HorizontalOptions="Center" />
+      </Grid>
+    </Grid>
+    <StackLayout BackgroundColor="#612084" Grid.Row="3"  Grid.ColumnSpan="3">
     </StackLayout>
   </Grid>
 </ContentPage>
