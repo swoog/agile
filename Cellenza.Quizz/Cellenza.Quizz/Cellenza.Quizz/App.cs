@@ -26,6 +26,8 @@ namespace Cellenza.Quizz
         private static int _questionIndex;
         private static Question[] _questions;
 
+        private const int numberQuestions = 10;
+
         public static void RestartQuizz()
         {
 
@@ -33,13 +35,13 @@ namespace Cellenza.Quizz
             QuizzPoints = 0;
             var repo = new QuestionsRepository();
             var rand = new Random();
-           
+
 
             var allQuestions = repo.GetAll().ToArray();
 
-            for (int i=0; i < 30; ++i)
+            for (int i = 0; i < 30; ++i)
             {
-                 var randNumber = rand.Next(allQuestions.Length);
+                var randNumber = rand.Next(allQuestions.Length);
 
                 var q1 = allQuestions[0];
                 var q2 = allQuestions[randNumber];
@@ -48,7 +50,7 @@ namespace Cellenza.Quizz
                 allQuestions[randNumber] = q1;
             }
 
-            _questions = allQuestions.Take(10).ToArray();
+            _questions = allQuestions.Take(numberQuestions).ToArray();
         }
 
         public static void AnswerQuizz(int points)
@@ -60,7 +62,7 @@ namespace Cellenza.Quizz
         public static Question CurrentQuestion
         {
             get { return _questions[_questionIndex]; }
-            
+
         }
 
         public static Page GetStartPage()
@@ -70,10 +72,16 @@ namespace Cellenza.Quizz
 
         public static int QuizzPoints { get; private set; }
 
-        public static int QuestionAnswered {
+        public static int QuestionAnswered
+        {
             get { return _questionIndex; }
         }
 
         public static IMeuhSoundService MeuhSoundService { get; set; }
+
+        public static bool IsAllQuestionsAnswered()
+        {
+            return QuestionAnswered < numberQuestions;
+        }
     }
 }

@@ -46,7 +46,7 @@ namespace Cellenza.Quizz
                             App.AnswerQuizz(r.Points);
                         
 
-                            if (App.QuestionAnswered < 10)
+                            if (App.IsAllQuestionsAnswered())
                             {
                                 this.Navigation.PushAsync(App.GetPage<QuizzPage, QuizzViewModel>());
                             }

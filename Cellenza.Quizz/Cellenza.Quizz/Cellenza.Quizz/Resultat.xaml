@@ -2,5 +2,26 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
 					   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 					   x:Class="Cellenza.Quizz.Resultat">
-	<Label Text="{Binding Level}" VerticalOptions="Center" HorizontalOptions="Center" />
+  <Grid BackgroundColor="#FFFFFF">
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="50" />
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="20" />
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="100" />
+      <RowDefinition Height="200" />
+      <RowDefinition Height="*" />
+      <RowDefinition Height="50" />
+    </Grid.RowDefinitions>
+    <StackLayout BackgroundColor="#612084" Grid.Row="0" Grid.ColumnSpan="3">
+      <Image Source="title.png" />
+    </StackLayout>
+    <Grid Grid.Row="1" Grid.Column="1">
+      <Label Text="Votre score est de " TextColor="#333333" Font="40" VerticalOptions="Center" HorizontalOptions="Center" />
+    </Grid>
+    <Label Grid.Row="2" Text="{Binding Level}" Font="100" TextColor="#333333" VerticalOptions="Center" HorizontalOptions="Center" Grid.ColumnSpan="3" />
+    <StackLayout BackgroundColor="#612084" Grid.Row="3" Grid.ColumnSpan="3">
+    </StackLayout>
+  </Grid>
 </ContentPage>
