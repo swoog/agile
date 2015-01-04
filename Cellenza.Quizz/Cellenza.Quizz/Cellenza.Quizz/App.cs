@@ -15,10 +15,11 @@ namespace Cellenza.Quizz
             where TPage : Page, new()
             where TViewModel : BaseViewModel, new()
         {
-            var view = new TPage();
+            //var view = new TPage();
+			var view = new NavigationPage (new TPage());
             var vm = new TViewModel();
-            view.BindingContext = vm;
-            vm.Navigation = view.Navigation;
+            view.BindingContext = vm;	
+			vm.Navigation = view.Navigation;
 
             return view;
         }

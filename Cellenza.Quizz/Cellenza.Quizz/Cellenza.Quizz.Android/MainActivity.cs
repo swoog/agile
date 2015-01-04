@@ -16,10 +16,12 @@ namespace Cellenza.Quizz.Droid
     {
         protected override void OnCreate(Bundle bundle)
         {
+
+			///this.RequestWindowFeature (WindowFeatures.NoTitle);
             base.OnCreate(bundle);
 
             Xamarin.Forms.Forms.Init(this, bundle);
-
+			this.ActionBar.Hide ();
             SetPage(App.GetStartPage());
         }
     }

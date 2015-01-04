@@ -15,6 +15,7 @@
       <RowDefinition Height="50" />
     </Grid.RowDefinitions>
     <StackLayout BackgroundColor="#612084" Grid.Row="0"  Grid.ColumnSpan="3">
+
       <Image Source="title.png" />
     </StackLayout>
     <Image Grid.Column="1" Grid.Row="1" Source="medecin.png" />

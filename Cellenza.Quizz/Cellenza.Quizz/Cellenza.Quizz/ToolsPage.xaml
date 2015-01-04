@@ -6,7 +6,7 @@
 
     <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
 
-        <Image Source="Icones/Vache.png">
+        <Image Source="vache.png">
             <Image.GestureRecognizers>
                 <TapGestureRecognizer 
             Command="{Binding MeuhCommand}" 
